@@ -28,6 +28,8 @@ const Hero = () => {
             autoRotate
             autoRotateSpeed={2}
             enablePan={false}
+            enableDamping={false}
+            enableRotate={!isMobile}
           />
           <Suspense fallback={null}>
             <Drone />
