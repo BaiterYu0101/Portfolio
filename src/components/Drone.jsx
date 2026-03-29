@@ -62,46 +62,34 @@ export function Drone(props) {
                       skeleton={nodes.Object_11.skeleton}
                     />
                     <skinnedMesh
-                      name="Object_12"
-                      geometry={nodes.Object_12.geometry}
-                      material={materials.Drone_Yellow}
-                      skeleton={nodes.Object_12.skeleton}
-                    />
-                    <skinnedMesh
-                      name="Object_13"
-                      geometry={nodes.Object_13.geometry}
-                      material={materials.Drone_Blue}
-                      skeleton={nodes.Object_13.skeleton}
-                    />
-                    <skinnedMesh
-                      name="Object_14"
-                      geometry={nodes.Object_14.geometry}
-                      material={materials.Drone_Red}
-                      skeleton={nodes.Object_14.skeleton}
-                    />
-                    <skinnedMesh
-                      name="Object_25"
-                      geometry={nodes.Object_25.geometry}
-                      material={materials.Drone_Outline}
-                      skeleton={nodes.Object_25.skeleton}
-                    />
-                    <skinnedMesh
-                      name="Object_26"
-                      geometry={nodes.Object_26.geometry}
-                      material={materials.Drone_Outline}
-                      skeleton={nodes.Object_26.skeleton}
-                    />
-                    <skinnedMesh
-                      name="Object_27"
-                      geometry={nodes.Object_27.geometry}
-                      material={materials.Drone_Outline}
-                      skeleton={nodes.Object_27.skeleton}
-                    />
-                    <skinnedMesh
                       name="Object_29"
                       geometry={nodes.Object_29.geometry}
                       material={materials.Drone_Comic_Additions}
                       skeleton={nodes.Object_29.skeleton}
+                    />
+                    <skinnedMesh
+                      name="node0"
+                      geometry={nodes.node0.geometry}
+                      material={materials.Drone_Gray}
+                      skeleton={nodes.node0.skeleton}
+                    />
+                    <skinnedMesh
+                      name="node1"
+                      geometry={nodes.node1.geometry}
+                      material={materials.Drone_Outline}
+                      skeleton={nodes.node1.skeleton}
+                    />
+                    <skinnedMesh
+                      name="node2"
+                      geometry={nodes.node2.geometry}
+                      material={materials.Drone}
+                      skeleton={nodes.node2.skeleton}
+                    />
+                    <skinnedMesh
+                      name="node3"
+                      geometry={nodes.node3.geometry}
+                      material={materials.Drone_Yellow}
+                      skeleton={nodes.node3.skeleton}
                     />
                     <group name="Object_8" />
                     <group name="Object_24" />
