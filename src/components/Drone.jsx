@@ -29,7 +29,7 @@ export function Drone(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.095}>
+  <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.2}>
           <group name="f337b629572e4d64ad830bb62fa78296fbx" rotation={[Math.PI / 2, 0, 0]}>
             <group name="Object_2">
               <group name="RootNode">
