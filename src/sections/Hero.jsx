@@ -28,8 +28,7 @@ const Hero = () => {
             autoRotate
             autoRotateSpeed={2}
             enablePan={false}
-            enableRotate={true}
-            enabled={!isMobile}
+            enableRotate={!isMobile}
           />
           <Suspense fallback={null}>
             <Drone />
