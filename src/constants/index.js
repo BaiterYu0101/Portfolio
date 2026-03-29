@@ -264,46 +264,76 @@ export const experiences = [
 ];
 export const certifications = [
   {
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    body: "Verified expertise in designing scalable, highly available, and fault-tolerant systems on AWS. Demonstrates proficiency in cloud architecture best practices.",
-    img: "https://robohash.org/aws",
+    name: "Kubernetes",
+    issuer: "KodeKloud",
+    body: "Completed a hands-on, lab-based curriculum in Kubernetes fundamentals, focusing on container orchestration and cluster management through KodeKloud.",
+    img: "https://robohash.org/kubernetes", 
     date: "2024",
+    credential: {
+      url: "/assets/certifications/kubernetes.pdf",
+      type: "pdf",
+      downloadName: "kodecloud-kubernetes.pdf",
+    }
   },
   {
-    name: "Kubernetes Administrator (CKA)",
-    issuer: "Linux Foundation",
-    body: "Certified Kubernetes Administrator demonstrating practical skills in container orchestration, cluster management, and production deployments.",
+    name: "Certified in Cybersecurity",
+    issuer: "ISC2",
+    body: "Certified in Cybersecurity by demonstrating strong foundational skills in risk management, threat detection, and incident response.",
     img: "https://robohash.org/kubernetes",
-    date: "2024",
+    date: "2025",
+    credential: {
+      url: "/assets/certifications/CC.png",
+      type: "png",
+      downloadName: "CC.png",
+    }
   },
   {
-    name: "Docker Certified Associate",
-    issuer: "Docker",
-    body: "Certified professional in containerization and Docker ecosystem. Proficient in container design, development, and deployment strategies.",
+    name: "Catch The Flag.1 (CTF) Competitor",
+    issuer: "Try Hack Me",
+    body: "Successfully completed the Hackfinity Battle CTF by solving 20 security tasks to demonstrate practical problem-solving and cybersecurity skills.",
     img: "https://robohash.org/docker",
-    date: "2023",
+    date: "2025",
+    credential: {
+      url: "/assets/certifications/THM.pdf",
+      type: "pdf",
+      downloadName: "THM.pdf",
+    }
   },
   {
-    name: "Microsoft Azure Administrator",
-    issuer: "Microsoft",
-    body: "Certified Azure professional with expertise in managing Azure resources, implementing security, and optimizing cloud infrastructure.",
+    name: "Catch The Flag.2 (CTF) Competitor",
+    issuer: "Hack The Box",
+    body: "Achieved a team ranking of 110th out of 813 participants in the StackSmash CTF by Hack The Box, demonstrating competitive problem-solving and security expertise.",
     img: "https://robohash.org/azure",
-    date: "2023",
+    date: "2025",
+    credential: {
+      url: "/assets/certifications/HTB.jpeg",
+      type: "jpeg",
+      downloadName: "HTB.jpeg",
+    }
   },
   {
-    name: "HashiCorp Certified: Terraform Associate",
-    issuer: "HashiCorp",
-    body: "Certified in Infrastructure as Code using Terraform. Demonstrates ability to write and manage infrastructure automation scripts.",
+    name: "Hackathon",
+    issuer: "University Malaya & Petronas",
+    body: "Participated in the Physical Hackathon of Odyssey Hackfest at Universiti Malaya, collaborating on intensive software development and problem-solving challenges.",
     img: "https://robohash.org/terraform",
-    date: "2024",
+    date: "2022",
+    credential: {
+      url: "/assets/certifications/Hackathon.jpeg",
+      type: "jpeg",
+      downloadName: "Hackathon.jpeg",
+    }
   },
   {
-    name: "Jenkins Engineer",
-    issuer: "CloudBees",
-    body: "Certified Jenkins professional demonstrating expertise in CI/CD pipeline design and automation using Jenkins.",
-    img: "https://robohash.org/jenkins",
-    date: "2023",
+    name: "Piano Proficiency",
+    issuer: "ABRSM",
+    body: "Attained ABRSM Grade 8 in both Piano and Music Theory, demonstrating a high level of technical mastery, analytical thinking, and a decade-long commitment to disciplined practice.",
+    img: "https://robohash.org/HMO.png?set=set1",
+    date: "2022",
+    credential: {
+      url: "/assets/certifications/piano.pdf",
+      type: "pdf",
+      downloadName: "piano.pdf",
+    }
   },
 ];
 export const reviews = [
