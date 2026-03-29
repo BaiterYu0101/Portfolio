@@ -7,6 +7,7 @@ Title: Comic Drone
 */
 
 import React, { useEffect, useRef } from 'react'
+import { useFrame } from '@react-three/fiber'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
 export function Drone(props) {
@@ -18,6 +19,12 @@ export function Drone(props) {
             actions[animations[0].name]?.play()
         }
     }, [actions, animations]);
+
+  useFrame(() => {
+    if (group.current) {
+      group.current.rotation.y += 0.003
+    }
+  })
 
   return (
     <group ref={group} {...props} dispose={null}>
