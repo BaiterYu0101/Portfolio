@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const Certifications = () => {
   return (
-    <section className="c-space section-spacing" id="certifications">
+    <section className="c-space section-spacing pt-16" id="certifications">
       <h2 className="text-heading">Certifications & Credentials</h2>
 
       <div className="grid grid-cols-1 gap-6 mt-12 md:grid-cols-2 lg:grid-cols-3">
