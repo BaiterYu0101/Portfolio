@@ -9,16 +9,18 @@ Title: Comic Drone
 import React, { useEffect, useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { useGLTF, useAnimations } from '@react-three/drei'
+import { useMediaQuery } from 'react-responsive'
 
 export function Drone(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/models/comic_drone.glb')
   const { actions } = useAnimations(animations, group)
-    useEffect(() => {
-        if (animations.length > 0) {
-            actions[animations[0].name]?.play()
-        }
-    }, [actions, animations]);
+  const isMobile = useMediaQuery({ maxWidth: 853 });
+  useEffect(() => {
+    if (animations.length > 0) {
+      actions[animations[0].name]?.play()
+    }
+  }, [actions, animations]);
 
   useFrame(() => {
     if (group.current) {
@@ -29,7 +31,7 @@ export function Drone(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
-  <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={0.2}>
+        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={isMobile ? 0.45 : 0.2}>
           <group name="f337b629572e4d64ad830bb62fa78296fbx" rotation={[Math.PI / 2, 0, 0]}>
             <group name="Object_2">
               <group name="RootNode">
