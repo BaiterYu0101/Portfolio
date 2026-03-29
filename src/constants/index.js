@@ -210,7 +210,7 @@ export const myProjects = [
 export const mySocials = [
   {
     name: "Linkedin",
-    href: "www.linkedin.com/in/wongguangyu-1b3c2d",
+    href: "https://www.linkedin.com/in/wongguangyu-1b3c2d/",
     icon: "/assets/socials/linkedIn.svg",
   },
   {
