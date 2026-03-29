@@ -72,7 +72,7 @@ const Contact = () => {
     // CHANGES:
     // - items-center -> items-start (prevents the form from floating in the middle of a tall section)
     // - add pt-10 to keep spacing consistent with other sections
-    <section className="relative flex items-start pt-10 c-space section-spacing">
+  <section id="contact" className="relative flex items-start pt-10 c-space section-spacing">
       <Particles
         className="absolute inset-0 -z-50"
         quantity={100}

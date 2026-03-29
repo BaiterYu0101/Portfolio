@@ -17,7 +17,7 @@ const Hero = () => {
         className="absolute inset-0"
         style={{ width: "100vw", height: "100vh" }}
       >
-        <Canvas style={{ border: '2px solid red' }}>
+        <Canvas>
           <PerspectiveCamera makeDefault position={[0, 0, isMobile ? 18 : 5]} fov={50} />
           <ambientLight intensity={1.2} />
           <directionalLight position={[5, 10, 5]} intensity={1.2} castShadow />

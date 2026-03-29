@@ -31,7 +31,7 @@ export function Drone(props) {
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
-        <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={isMobile ? 0.45 : 0.2}>
+  <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]} scale={isMobile ? 0.18 : 0.09}>
           <group name="f337b629572e4d64ad830bb62fa78296fbx" rotation={[Math.PI / 2, 0, 0]}>
             <group name="Object_2">
               <group name="RootNode">
@@ -43,54 +43,16 @@ export function Drone(props) {
                   scale={100}>
                   <group name="Object_6">
                     <primitive object={nodes._rootJoint} />
-                    <skinnedMesh
-                      name="Object_9"
-                      geometry={nodes.Object_9.geometry}
-                      material={materials.Drone_Gray}
-                      skeleton={nodes.Object_9.skeleton}
-                    />
-                    <skinnedMesh
-                      name="Object_10"
-                      geometry={nodes.Object_10.geometry}
-                      material={materials.Drone_Outline}
-                      skeleton={nodes.Object_10.skeleton}
-                    />
-                    <skinnedMesh
-                      name="Object_11"
-                      geometry={nodes.Object_11.geometry}
-                      material={materials.Drone}
-                      skeleton={nodes.Object_11.skeleton}
-                    />
-                    <skinnedMesh
-                      name="Object_29"
-                      geometry={nodes.Object_29.geometry}
-                      material={materials.Drone_Comic_Additions}
-                      skeleton={nodes.Object_29.skeleton}
-                    />
-                    <skinnedMesh
-                      name="node0"
-                      geometry={nodes.node0.geometry}
-                      material={materials.Drone_Gray}
-                      skeleton={nodes.node0.skeleton}
-                    />
-                    <skinnedMesh
-                      name="node1"
-                      geometry={nodes.node1.geometry}
-                      material={materials.Drone_Outline}
-                      skeleton={nodes.node1.skeleton}
-                    />
-                    <skinnedMesh
-                      name="node2"
-                      geometry={nodes.node2.geometry}
-                      material={materials.Drone}
-                      skeleton={nodes.node2.skeleton}
-                    />
-                    <skinnedMesh
-                      name="node3"
-                      geometry={nodes.node3.geometry}
-                      material={materials.Drone_Yellow}
-                      skeleton={nodes.node3.skeleton}
-                    />
+                    {Object.entries(nodes).map(([name, node]) =>
+                      node.geometry ? (
+                        <skinnedMesh
+                          key={name}
+                          geometry={node.geometry}
+                          material={node.material || Object.values(materials)[0]}
+                          skeleton={node.skeleton}
+                        />
+                      ) : null
+                    )}
                     <group name="Object_8" />
                     <group name="Object_24" />
                     <group name="Object_28" position={[-6.283, 3, 6.252]} />

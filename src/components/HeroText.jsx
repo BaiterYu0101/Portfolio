@@ -27,7 +27,7 @@ const HeroText = ({ mobile }) => {
                         initial="hidden"
                         animate="visible"
                         transition={{ delay: 1.2 }}
-                    >A DevOps Engineer <br /> Dedicated to Automating
+                    >A DevOps Engineer <br /> Dedicated to Automate
                     </motion.p>
                     <motion.div
                         variants={variants}
