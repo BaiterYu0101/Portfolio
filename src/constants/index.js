@@ -3,7 +3,7 @@ export const myProjects = [
     id: 1,
     title: "Food-Reservation-System",
     description:
-      "Facilitates purchases from international websites like Amazon and eBay, allowing customers to shop from these sites and have products delivered domestically.",
+      "The food reservation system design primarily focuses on providing a seamless user experience for food ordering and making payment at the same time for primary student by scanning their ID cards.",
     subDescription: [
       "Built a scalable application with ASP.NET Core MVC, integrating global platforms like Amazon for domestic delivery.",
       "Implemented secure authentication and database management using ASP.NET Core Identity and Entity Framework Core.",
@@ -175,10 +175,9 @@ export const myProjects = [
     description:
       "A web application that allows users to enroll in courses, watch video lectures, and take quizzes.",
     subDescription: [
-      "Built using Blazor WebAssembly for a seamless SPA experience.",
-      "Implemented video streaming with Azure Media Services.",
-      "Added a quiz system with dynamic question generation and real-time grading.",
-      "Integrated Stripe API for secure payment processing.",
+      "Engineered a Python tool that interfaces with the Kubernetes API to identify 'Zombie Resources' by analyzing the delta between CPU/Memory requests and actual utilization.",
+      "Automated resource reclamation workflows using ArgoCD and Jenkins, enabling a self-healing infrastructure that reduces cloud waste.",
+      "Designed the system to provide actionable insights for rightsizing Pods, directly impacting the bottom line by optimizing cloud spending.",
     ],
     href: "",
     logo: "",
@@ -228,37 +227,83 @@ export const mySocials = [
 
 export const experiences = [
   {
-    title: "Software Developer",
-    job: "Security & Defense Projects",
-    date: "2021-2023",
+    title: "Hack The Box Academy",
+    job: "Hacking Enthusiast ",
+    date: "2022-2024",
     contents: [
-      "Enhanced application security and developed new features, adhering to standards set by the Passive Defense Organization and National Cyberspace Center.",
-      "Designed and implemented intuitive map interfaces using MapsUI, enhancing user experience and enabling seamless interactive map integration.",
-      "Developed applications for industrial automation, leveraging C++ and the Fatek API for PLC communication.",
-      "Enhanced responsiveness and usability of applications using Windows Forms and WPF frameworks.",
-      "Executed XML to SVG conversions using X-DOM, ensuring dynamic and efficient data visualization.",
+      "Applied advanced concepts in network security, ethical hacking and cryptography to complete secure communication and penetration testing.",
+      "Proficient with industry standard tools and technologies such as Wireshark, Metasploit, and Burp Suite.",
+      "Awarded mutiple times of Dean's List Award.",
+      "Solid Programming skillset including Python, Bash, JavaScript.",
     ],
   },
   {
-    title: "Back-End Developer",
-    job: "Car Manufacture",
-    date: "2023-2024",
+    title: "Konica Minolta",
+    job: "IT Support Engineer",
+    date: "2024-2025",
     contents: [
-      "Engineered systems for large-scale data ingestion and analysis, ensuring efficient data processing and storage.",
-      "Developed back-end systems enabling vehicle-to-cloud communication for telemetry, diagnostics, and remote control:",
-      "✅ Implemented secure APIs, following ISO 26262 automotive safety standards.",
-      "✅ Ensured data privacy for customers and partners through industry-compliant protocols.",
-      "✅ Delivered remote features like over-the-air updates, real-time tracking, and remote start capabilities.",
+      "Authored a comprehensive troubleshooting workflow, streamlining issue resolution processes.",
+      "Executed PowerShell scripts to remediate CrowdStrike EDR malfunctions.",
+      "Diagnosed Blue Screen of Death (BSOD) incidents by interpreting Windows stop codes and correlating with system logs",
+      "Utilized ManageEngine for proactive endpoint compliance monitoring and patch deployment verification.",
+      "Deployed and validated Symantec Endpoint Protection (SEP) and Data Loss Prevention (DLP) agents.",
+      "Aligned patch management and endpoint hardening tasks with ISO 27001/27002 security controls, reinforcing compliance with international security standards.",
     ],
   },
   {
-    title: "Freelance Developer",
-    job: "Self-Employed",
+    title: "Infineon Technologies",
+    job: "DevOps Engineer",
     date: "2025-Present",
     contents: [
-      "Created a personal portfolio using Three.js, React, Vite, and WebAPI to showcase technical expertise.",
-      "Continuously enhancing technical skills and expanding expertise in modern web development and back-end technologies.",
+      "Orchestrate the transition of legacy factory workloads into containerized environments using Docker and Kubernetes (OpenShift) to enhance deployment agility and horizontal scalability.",
+      "Develop custom automation frameworks to monitor system integration points, reducing manual troubleshooting time by implementing proactive health checks.",
+      "Implement real-time monitoring tools to identify system bottlenecks, utilizing a data-driven approach to optimize resource allocation and maintain factory floor stability.",
+      "Integrate secure authentication protocols and digital access control systems for critical infrastructure, aligning with industrial cybersecurity standards.",
     ],
+  },
+];
+export const certifications = [
+  {
+    name: "AWS Certified Solutions Architect",
+    issuer: "Amazon Web Services",
+    body: "Verified expertise in designing scalable, highly available, and fault-tolerant systems on AWS. Demonstrates proficiency in cloud architecture best practices.",
+    img: "https://robohash.org/aws",
+    date: "2024",
+  },
+  {
+    name: "Kubernetes Administrator (CKA)",
+    issuer: "Linux Foundation",
+    body: "Certified Kubernetes Administrator demonstrating practical skills in container orchestration, cluster management, and production deployments.",
+    img: "https://robohash.org/kubernetes",
+    date: "2024",
+  },
+  {
+    name: "Docker Certified Associate",
+    issuer: "Docker",
+    body: "Certified professional in containerization and Docker ecosystem. Proficient in container design, development, and deployment strategies.",
+    img: "https://robohash.org/docker",
+    date: "2023",
+  },
+  {
+    name: "Microsoft Azure Administrator",
+    issuer: "Microsoft",
+    body: "Certified Azure professional with expertise in managing Azure resources, implementing security, and optimizing cloud infrastructure.",
+    img: "https://robohash.org/azure",
+    date: "2023",
+  },
+  {
+    name: "HashiCorp Certified: Terraform Associate",
+    issuer: "HashiCorp",
+    body: "Certified in Infrastructure as Code using Terraform. Demonstrates ability to write and manage infrastructure automation scripts.",
+    img: "https://robohash.org/terraform",
+    date: "2024",
+  },
+  {
+    name: "Jenkins Engineer",
+    issuer: "CloudBees",
+    body: "Certified Jenkins professional demonstrating expertise in CI/CD pipeline design and automation using Jenkins.",
+    img: "https://robohash.org/jenkins",
+    date: "2023",
   },
 ];
 export const reviews = [
