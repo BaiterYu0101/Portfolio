@@ -31,7 +31,7 @@ const Hero = () => {
             enablePan={false}
             enableRotate={!isMobile}
           />
-          <Suspense fallback={null}>
+          <Suspense fallback={<div className="absolute inset-0 flex items-center justify-center z-50"><div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-white"></div><span className="ml-4 text-white text-lg">Loading drone...</span></div>}>
             <Drone />
           </Suspense>
         </Canvas>
