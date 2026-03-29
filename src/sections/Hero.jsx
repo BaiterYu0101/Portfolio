@@ -28,7 +28,12 @@ const Hero = () => {
             autoRotate
             autoRotateSpeed={2}
             enablePan={false}
-            enableRotate={!isMobile}
+            enableRotate={true}
+            // disables all pointer/touch controls on mobile
+            makeDefault
+            onStart={(e) => {
+              if (window.innerWidth <= 853) e.target.enabled = false;
+            }}
           />
           <Suspense fallback={null}>
             <Drone />
